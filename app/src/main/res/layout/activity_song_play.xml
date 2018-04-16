@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.music.SongPlay">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/faded_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.35"
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vamps2" />
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vamps2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#f5f5f5">
+
+            <TextView
+                android:id="@+id/SongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="17dp"
+                android:text="All for you"
+                android:textAllCaps="true"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SongName"
+                android:layout_alignStart="@+id/SongName"
+                android:layout_below="@+id/SongName"
+                android:layout_marginTop="10dp"
+                android:text="THE VAMPS | Download"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:text="01:24" />
+
+            <ImageView
+                android:id="@+id/buyNow"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/textView5"
+                android:layout_alignRight="@+id/textView5"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/visa" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageView8"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/repeat" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/pause" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/play"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/play"
+                android:layout_toRightOf="@+id/play"
+                android:src="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/play"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@+id/play"
+                android:layout_toStartOf="@+id/play"
+                android:src="@drawable/prev" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/shuffle" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+</RelativeLayout>
