@@ -23,7 +23,7 @@ This sample uses the Gradle build system. To build this project, use the
 
 Screenshots
 -----------
-![alt text](https://assets.pcmag.com/media/images/566167-best-android-apps.jpg?thumb=y&width=810&height=456)
+![alt text](https://github.com/Roal5236/AndroidFinalProject/blob/master/Screenshots/Screenshot_1523871702.png)
 
 
 Support
